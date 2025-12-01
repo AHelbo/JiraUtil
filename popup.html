@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Jira Myself Call</title>
+  <title>Jira Myself</title>
   <style>
     body { width: 300px; font-family: Arial; padding: 10px; }
     hr { margin: 10px 0; }
+    #issueField { width: 100%; margin-bottom: 10px;}
+    #callBtn { width: 100%}
     #output { width: 100%; height: 50px; }
   </style>
 </head>
 <body>
-  <h3>Jira Myself</h3>
+  <h3>Jira Issue Lookup</h3>
   <hr>
-  <button id="callBtn">Call Myself</button>
+  <input id="issueField" type="text" placeholder="Enter issue key (e.g. FDK-1900)">
+  <button id="callBtn">Lookup</button>
   <hr>
   <textarea id="output" readonly></textarea>
-
   <script src="popup.js"></script>
 </body>
 </html>
