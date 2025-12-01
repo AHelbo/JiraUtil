@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Jira Quick Call",
+  "version": "1.0",
+  "description": "Call Jira Myself endpoint and see response",
+  "permissions": ["storage", "alarms"],
+  "host_permissions": ["https://your-domain.atlassian.net/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png"
+    }
+  },
+  "options_page": "options.html",
+  "background": {
+    "service_worker": "background.js"
+  }
+}
