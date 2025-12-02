@@ -76,3 +76,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+function sendTimeRegistration({ start, end, duration, description, project }) {
+    return new Promise(resolve => {
+      chrome.runtime.sendMessage(
+        { type: "timeSubmit", payload: { start, end, duration, description, project } },
+        response => resolve(response)
+      );
+    });
+  }

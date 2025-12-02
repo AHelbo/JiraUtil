@@ -10,17 +10,20 @@
       background: var(--bg);
       width: 300px;
     }
-    #callBtn { 
+    #callBtn,
+    #registerBtn { 
         width: 100%; 
         margin-bottom: 20px; 
         border-width: 1px;
     }
-    #issueField { 
+    #issueField,
+    #registerField { 
         width: 100%; 
         margin-bottom: 20px; 
         color: var(--text-white)
     }
-    #output { 
+    #output,
+    #registerResponse {
         width: 100%; 
         height: 70px; 
         color: var(--text-white)
@@ -35,6 +38,12 @@
     <button id="callBtn" class>Lookup</button>
     <textarea id="output" readonly></textarea>
   </fieldset>
+  <fieldset>
+    <legend>Register time</legend>
+    <input id="registerField" type="text" placeholder="Enter issue key (e.g. FDK-1234)">
+    <button id="registerBtn" class>register</button>
+    <textarea id="registerResponse" readonly></textarea>
+  </fieldset>  
   <script src="popup.js"></script>
 </body>
 </html>
