@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Jira Quick Call",
+  "name": "JiraTime",
   "version": "1.0",
-  "description": "Call Jira Myself endpoint and see response",
+  "description": "",
   "permissions": ["storage", "alarms"],
   "host_permissions": ["https://novataris.atlassian.net/*"],
   "action": {
